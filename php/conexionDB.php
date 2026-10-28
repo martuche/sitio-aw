@@ -1,10 +1,24 @@
 <?php
 
-$servidor = "127.0.0.1";
-$puerto = "3306";
-$baseDatos = "sitio_aw";
-$usuario = "root";
-$contrasena = "";
+$rutaEntorno = dirname(__DIR__) . '/.env';
+
+if (!is_file($rutaEntorno)) {
+    http_response_code(500);
+    exit("No se encontró la configuración de la base de datos.");
+}
+
+$configuracion = parse_ini_file($rutaEntorno, false, INI_SCANNER_RAW);
+
+if ($configuracion === false) {
+    http_response_code(500);
+    exit("No se pudo leer la configuración de la base de datos.");
+}
+
+$servidor = $configuracion['DB_HOST'];
+$puerto = $configuracion['DB_PORT'];
+$baseDatos = $configuracion['DB_NAME'];
+$usuario = $configuracion['DB_USER'];
+$contrasena = $configuracion['DB_PASSWORD'];
 
 try {
     $conexion = new PDO(
@@ -19,6 +33,8 @@ try {
     );
 
 } catch (PDOException $error) {
+    error_log("Error de conexión MySQL: " . $error->getMessage());
+
     http_response_code(500);
     exit("No se pudo conectar con la base de datos.");
 }

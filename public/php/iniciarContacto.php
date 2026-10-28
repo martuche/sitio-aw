@@ -24,7 +24,7 @@ if (
     exit("Los datos ingresados no son válidos.");
 }
 
-require_once __DIR__ . "/conexionDB.php";
+require_once dirname(__DIR__, 2) . '/php/conexionDB.php';
 
 try {
     $consulta = $conexion->prepare(
