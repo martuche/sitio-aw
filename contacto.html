@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+
+    <!-- Contacto -->
+    <div class="fondo-celeste-claro seccion">
+        <h1 class="texto-azul-oscuro">Contacto</h1>
+        <p>
+            <em>
+                Podés encontrarme a través de mis redes sociales o enviarme un mensaje a través del formulario.
+            </em>
+        </p>
+    </div>
+
+    <!--datos de contacto-->
+    <!--
+    <div class="fondo-celeste-claro-2 seccion">
+        <h2 class="texto-azul-oscuro">Datos de contacto</h2>
+
+        <p>
+            Correo electrónico:
+            <a href="mailto:quirozmartu@gmail.com">quirozmartu@gmail.com</a>
+        </p>
+    </div>-->
+	<!--fin datos-->
+
+    <!-- Redes sociales -->
+    <div class="fondo-celeste-claro-2 seccion">
+        <h2 class="texto-azul-oscuro">Redes sociales</h2>
+		<ul class="lista">
+		<li><a href="https://www.instagram.com/" target="_blank">
+                Instagram
+            </a></li>
+			<li><a href="https://github.com/" target="_blank">
+                GitHub
+            </a></li>
+		</ul>
+
+    </div>
+
+    <!--formulario de contacto-->
+
+    <!-- Formulario de contacto -->
+<section class="fondo-celeste-claro seccion">
+    <h2 class="texto-azul-oscuro">Formulario</h2>
+
+    <form id="formularioContacto"
+          action="php/iniciarContacto.php"
+          method="POST">
+
+        <div>
+            <label for="nombre">Nombre/s:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="100" required>
+        </div>
+
+        <div>
+            <label for="apellido">Apellido/s:</label>
+            <input type="text" id="apellido" name="apellido" maxlength="100" required>
+        </div>
+
+        <div>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="mail" maxlength="200" required>
+            <span id="email-error" class="error-message"></span>
+        </div>
+
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" maxlength="1000" rows="5" required></textarea>
+        </div>
+        <div class="containerButton">
+            <button type="submit" class="btn">Enviar</button>
+        </div>
+    </form>
+</section>
+
+
+    <!-- Volver -->
+    <div class="fondo-celeste-claro-2 seccion">
+        <p>
+            <strong>
+                <a href="index.html">Volver al inicio</a>
+            </strong>
+        </p>
+    </div>
+
+
+
+    <script src="js/contacto.js"></script>
+</body>
+</html>

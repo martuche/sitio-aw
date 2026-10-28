@@ -1,0 +1,193 @@
+/*paleta de colores
+
+Azul oscuro #163869
+Celeste muy claro #cce1ff
+Celeste claro #c0d8fa
+
+*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	background-color: #cce1ff;
+	color: #000000;
+}
+
+.seccion{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+p{
+	line-height: 1.4;
+}
+
+a{
+	color: #6e0aa3;
+	font-weight: 600;
+}
+
+a:hover{
+	background-color: #ddabf7;
+}
+
+.btn{
+	background-color: #ddabf7;
+	border: none;
+	border-radius: 30px;
+	padding: 20px;
+	cursor: pointer;
+	color: #000000;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.btn:hover{
+	background-color: #F5B37F;
+	transition: 0.6s;
+}
+
+.containerButton{
+	text-align: center;
+}
+
+.texto-azul-oscuro{
+	color: #163869;
+}
+
+.texto-celeste-claro{
+	color: #cce1ff;
+}
+
+.texto-celeste-claro-2{
+	color: #c0d8fa;
+}
+
+.fondo-azul-oscuro{
+	background-color: #163869;
+}
+
+.fondo-celeste-claro{
+	background-color: #cce1ff;
+}
+
+.fondo-celeste-claro-2{
+	background-color: #c0d8fa;
+}
+
+
+.titulo{
+	font-size: 30px;
+}
+
+h1, h2{
+	margin-bottom: 20px;
+}
+
+.subtitulo{
+	margin-top:10px;
+	font-size: 25px;
+	font-weight: 300;
+}
+
+
+#presentacion h2{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+#presentacion img{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 30px;
+}
+
+#presentacion p{
+	font-size: 20px;
+	padding: 0 40px 0 40px;
+}
+
+.saludo{
+	font-weight:600;
+}
+
+#habilidades h2{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+#actividades h2{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+#contacto h2{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+.contenedorImagen{
+	margin: 25px;
+}
+
+.contenedorImagen img{
+	border-radius: 20px;
+}
+
+.contenedorImagen p{
+	font-size: 18px;
+}
+
+#actividades p{
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.lista{
+	list-style: none;
+}
+
+.lista li{
+	margin-bottom: 15px;
+}
+
+
+#formularioContacto {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#formularioContacto div {
+    margin-bottom: 20px;
+}
+
+#formularioContacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+#formularioContacto input,
+#formularioContacto textarea {
+    width: 100%;
+    padding: 10px;
+	border: 0;
+    border-radius: 5px;
+}
+
+#formularioContacto input:focus-visible, #formularioContacto textarea:focus-visible{
+	outline: 1px #ddabf7 auto;
+	outline-offset: 3px;
+}
